@@ -14,6 +14,6 @@ with dbopen('db') as c:
 
 with dbopen('db') as c:
     housing = c.rows('housing').df()
-    housing.hist(bins=50, figsize=(20, 15))
+    housing.hist(bins=50, figsize=(8, 5))
     plt.show()
 #%%
